@@ -15,15 +15,15 @@ public:
             res[i][j] = 0;
         }
 
+        vector<pair<int, int>> dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};   // Down, Up, Right, Left
+
         // multi source bfs
         while (!waterCells.empty()) {
             auto [x, y] = waterCells.front();
             waterCells.pop();
 
-            vector<pair<int, int>> dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};   // Down, Up, Right, Left
             for (auto& [dx, dy] : dirs) {
-                int nx = x + dx;
-                int ny = y + dy;
+                int nx = x + dx, ny = y + dy;
                 if (nx >= 0 && nx < rows && ny >= 0 && ny < cols && res[nx][ny] == -1) {
                     res[nx][ny] = res[x][y]+1;
                     waterCells.push({nx, ny});

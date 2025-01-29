@@ -1,4 +1,4 @@
-// Jan. 29th, 2025 (daily)
+// Jan. 28th, 2025 (daily)
 // learned union find
 
 class Solution {

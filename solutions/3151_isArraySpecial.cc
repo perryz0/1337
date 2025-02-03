@@ -1,3 +1,5 @@
+// Jan. 31st, 2025 (daily)
+
 class Solution {
 public:
     bool isArraySpecial(vector<int>& nums) {

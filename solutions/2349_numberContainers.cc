@@ -9,7 +9,7 @@ class NumberContainers {
         NumberContainers() = default;
         
         void change(int index, int number) {
-            // if already index already taken, must remove prev number from pq
+            // if already index already taken, must remove prev number from set
             auto imIter = indexMap.find(index);
             if (imIter != indexMap.end()) {
                 container.find(imIter->second)->second.erase(index);

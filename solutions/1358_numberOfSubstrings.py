@@ -1,4 +1,4 @@
-// Mar. 10th, 2025 (daily)
+# Mar. 10th, 2025 (daily)
 
 class Solution:
     def numberOfSubstrings(self, s: str) -> int:

@@ -15,11 +15,6 @@ class Solution:
         vals.sort()
 
         med = vals[(m*n-1)//2]
-        # print(med)
-        s = 0
-        for val in vals:
-            s += abs(val-med)
 
-        # print(s)
-
-        return s//x
+        return sum(abs(val - med) for val in vals)//x
+    

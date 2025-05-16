@@ -1,4 +1,11 @@
 // May 14th, 2025 (daily)
+#include <stdlib.h>
+#include <algorithm>
+#include <string>
+#include <vector>
+#include <cstring>
+
+using namespace std;
 
 class Solution {
 private:
@@ -49,7 +56,7 @@ public:
         }
 
         // traced backwards so rev
-        reverse(path.begin(), path.end());
+        std::reverse(path.begin(), path.end());
         return path;
     }
 };

@@ -1,4 +1,4 @@
-// Jan. 18th, 2025 (daily)
+// Jan. 18th, 2025 (daily), Oct. 2nd, 2025
 
 class Solution {
 public:
